@@ -3,10 +3,12 @@ from guesslang import Guess
 import json
 app = Flask(__name__)
 
+port = 5000
 
-# @app.route("/")
-# def home():
-#     return "home"
+
+@app.route("/")
+def home():
+    return "home"
 
 
 @app.route('/')
